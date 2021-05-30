@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Backstage / OU Walking Club</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body><!--Comments and explanations in HTML code -->
+         <header>
+            <h1>Admin Application</h1>
+            <!-------Background Picture-->
+    
+            <div class="container-fluid image-container">
+                <div class="row my-5">
+                    <div class="col-12 background">
+                    </div>
+                </div>
+            </div>
+    
+            <!--------Nav---------------->
+    
+            <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+            
+            <button class="navbar-toggler ml-left" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" ><span class="navbar-toggler-icon"></span></button>
+    
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class=" nav-item mr-2">
+                            <a class="nav-link text-uppercase text-white ui-menu-text"
+                                href="index.html"><span>Walk Events</span></a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class=" active nav-link text-uppercase text-white ui-menu-text"
+                                href="q2.html"><span>Add Annoucement</span></a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link text-uppercase text-white ui-menu-text"
+                                href="events.html"><span>Social</span></a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link text-uppercase text-white ui-menu-text"
+                                href="membership.html"><span>Club Membership</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-md-block">
+                  <h1 class="navbar-text text-blue my-auto mr-2">Backstage / OU Walking Club</h1>
+              </div>
+               </nav>
+    
+            <!--------------/.nav-->
+        </header>
+        <main>   
+        <p>To add new annoucement enter your personnel details.</p>
+         <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form1" name="form1">
+            <fieldset>
+                <legend>Admin Information</legend>
+                <div class="form-group">
+                  <label for="first_name">First Name:</label>
+                  <input id="first_name" name="first_name" type="text" />
+                </div>
+                <div class="form-group">
+                  <label for="last_name">Last Name: </label>
+                  <input id="last_name" name="last_name" type="text" />
+                </div>
+                <div class="form-group">
+                  <label for="house_number">House Number: </label>
+                  <input id="house_number" name="house_number" type="text" />
+                </div>
+                <div class="form-group">
+                  <label for="post_code">Postcode: </label>
+                  <input id="post_code" name="post_code" type="text" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email: </label>
+                  <input id="email" name="email" type="email" />
+                </div>
+              </fieldset>
+            <fieldset>
+                <legend>Add new annoucement</legend>
+            <p><label for="mytextarea"></label>
+            <textarea name="mytextarea" id="mytextarea" rows="10" cols="30"  required maxlength="100" minlength="10"></textarea></p>
+        </fieldset>
+            
+            <input type="submit" name="submit" value="Submit">
+            
+         </form>
+
+         <!--
+         <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form2" name="form2" >  
+            <p><label for="mytextarea">Type a paragraph of text</label>
+            <textarea name="mytextarea" id="mytextarea" rows="10" cols="30"  required maxlength="100" minlength="10"></textarea></p>
+            <p><label for="mytextarea2">Type another paragraph of text</label>
+            <textarea name="mytextarea2" id="mytextarea2" rows="10" cols="30" >Text pre-inserted into a text area is added like this - inspect the code.
+            </textarea></p>
+            <input type="submit" name="submit" value="Submit">
+         </form>
+         <p>and a password input where the typed text is hidden.</p>
+         <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form3" name="form3">
+            <p><label for="password">Type in your password, at least 12 characters</label>
+            <input type="password" name="mypass" id="mypass" required minlength="12" ></p>
+            <input type="submit" name="submit" value="Submit">
+         </form>
+         <p>Where the input is purely a number, then an input type number can be used.</p>
+         <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form4" name="form4">
+            <p><label for="mycount">Select or type in a number: </label>
+            <input type="number" name="mycount" id="mycount" min="1" max="10" ></p>
+            <input type="submit" name="submit" value="Submit">
+         </form>
+                 
+         <p>To select a date, a display that shows the date on a calendar ensures that only valid dates are submitted. However not all browsers support this input. Use the Chrome browser to see this in action. </p>
+         <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form10" name="form10">
+            <label for="mydate">Select a date between max="2020-12-31" min="2000-01-01": </label>
+            <input type="date" name="mydate" id="mydate" max="2020-12-31" min="2000-01-01"> <br>
+            <input type="submit" name="submit" value="Submit">
+         </form>
+
+         <p>Sometimes we want a form to include data that we have added to it when the form was created, or added dynamically by JavaScript, but we don't want the user to edit this data. For this we use a hidden form element. </p>
+         <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form16" name="form16" >
+            <input type="hidden" name="myhidden" id="myhidden" value="This is my content hidden from the user - but note they can read it in the page source code" > <br>
+            <input type="submit" name="submit" value="Submit">
+         </form>
+         <p>To input an email address</p>
+         <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form17" name="form17" >
+            <label for="myemail">Email: </label><input type="email" name="myemail" id="myemail" value="" > <br>
+            <input type="submit" name="submit" value="Submit">
+         </form> -->
+
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+   </body>
+</html>
