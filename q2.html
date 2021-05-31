@@ -7,20 +7,21 @@
         <title>Backstage / OU Walking Club</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body><!--Comments and explanations in HTML code -->
          <header>
-            <h1>Admin Application</h1>
-            <!-------Background Picture-->
+               <!-------Background Picture-->
     
-            <div class="container-fluid image-container">
+               <div class="container-fluid heading-container">
                 <div class="row my-5">
                     <div class="col-12 background">
                     </div>
                 </div>
-            </div>
-    
+            </div> 
             <!--------Nav---------------->
     
             <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
@@ -56,35 +57,35 @@
             <!--------------/.nav-->
         </header>
         <main>   
-        <p>To add new annoucement enter your personnel details.</p>
+        <div><h1>To add new annoucement or contact <br>club members please fill out the form!</h1></div>
          <form method="post" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" id="form1" name="form1">
             <fieldset>
-                <legend>Admin Information</legend>
+                <legend>Admin details</legend>
                 <div class="form-group">
                   <label for="first_name">First Name:</label>
-                  <input id="first_name" name="first_name" type="text" />
+                  <input id="first_name" name="first_name" type="text" placeholder="Your first name.." />
                 </div>
                 <div class="form-group">
                   <label for="last_name">Last Name: </label>
-                  <input id="last_name" name="last_name" type="text" />
+                  <input id="last_name" name="last_name" type="text" placeholder="Your lastname.." />
                 </div>
                 <div class="form-group">
-                  <label for="house_number">House Number: </label>
-                  <input id="house_number" name="house_number" type="text" />
+                  <label for="admin_number">ID Number: </label>
+                  <input id="admin_number" name="admin_number" type="text" placeholder="Your Admin ID number.." />
                 </div>
                 <div class="form-group">
-                  <label for="post_code">Postcode: </label>
-                  <input id="post_code" name="post_code" type="text" />
+                   <label for="members_email">Club Member: </label>
+                   <input id="members_email" name="memebers_email" type="email" placeholder="Choose email address.." />
                 </div>
                 <div class="form-group">
-                  <label for="email">Email: </label>
-                  <input id="email" name="email" type="email" />
+                  <label for="email">Admin Email: </label>
+                  <input id="email" name="email" type="email" placeholder="Your email.." />
                 </div>
               </fieldset>
             <fieldset>
                 <legend>Add new annoucement</legend>
             <p><label for="mytextarea"></label>
-            <textarea name="mytextarea" id="mytextarea" rows="10" cols="30"  required maxlength="100" minlength="10"></textarea></p>
+            <textarea name="mytextarea" id="mytextarea" rows="10" cols="54"  required maxlength="600" minlength="10"></textarea></p>
         </fieldset>
             
             <input type="submit" name="submit" value="Submit">
@@ -130,7 +131,20 @@
             <label for="myemail">Email: </label><input type="email" name="myemail" id="myemail" value="" > <br>
             <input type="submit" name="submit" value="Submit">
          </form> -->
-
+         
+	<footer class="container-fluid footer-container">
+         <div class="row mt-5">
+			<div class="col-12">
+				<h5 class="text-uppercase footer-sub">Address</h5>
+				<p class="address">
+					The Open University, Milton Keynes, England MK7 6AA<br>
+					<i class="fas fa-phone"></i> 0300 303 5303 |
+					<i class="fas fa-envelope-square"></i> ou.walking.club@openuniversity.co.uk
+				</p>
+			</div>
+		</div>
+	    </footer>
+    <!----/.footer------->
         </main>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
